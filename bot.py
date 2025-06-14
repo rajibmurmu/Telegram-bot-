@@ -20,3 +20,8 @@ async def handle_link(client, message):
     if not direct:
         return await message.reply_text("❌ সরাসরি ডাউনলোড লিংক পাওয়া যায়নি।")
     await client.send_video(message.chat.id, direct)
+
+# ✅ এই অংশটা যোগ করো!
+if __name__ == "__main__":
+    print("🤖 Bot is starting...")
+    app.run()
